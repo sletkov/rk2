@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рубежный контроль по дисциплине "Основы веб-разработки на стороне клиента"</title>
-    <link rel="stylesheet" href="style.css">
+    <link class="theme-link" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light.css" id="theme-link">
 </head>
 <body>
     <header class="header">
         <div class="header__wrapper wrapper">
-            <a href=""><img src="img/Mospolytech_logo.jpg" alt="logo" class="header__logo"></a>
+            <a href="index.html"><img src="img/Mospolytech_logo.jpg" alt="logo" class="header__logo"></a>
             <nav class="header__navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__link"><a class="link link-processors" href="#">Процессоры</a></li>
-                    <li class="navigation__link"><a class="link link-videocards" href="#">Видеокарты</a></li>
-                    <li class="navigation__link"><a class="link link-ram" href="#">Оперативная память</a></li>
+                    <li class="navigation__link"><a class="link link-processors" href="#processors">Процессоры</a></li>
+                    <li class="navigation__link"><a class="link link-videocards" href="#videocards">Видеокарты</a></li>
+                    <li class="navigation__link"><a class="link link-ram" href="#ram">Оперативная память</a></li>
                 </ul>
             </nav>
-            <button class="theme-button light-theme">Сменить тему</button>
+            <button id ="theme-button" class="theme-button light-theme">Сменить тему</button>
         </div>
     </header>
 
@@ -26,7 +27,7 @@
         <div class="main__wrapper">
             <h1 class="page__heading">Сборка компьютера</h1>
 
-            <div class="processors">
+            <div class="processors" id="processors">
                 <h2 class="processors__heading">Процессоры</h2>
                 <div class="processors__cardbox">
 
@@ -54,7 +55,7 @@
                 
             </div>
 
-            <div class="videocards">
+            <div class="videocards" id="videocards">
                 <h2 class="videocards__heading">Видеокарты</h2>
 
                 <div class="videocards__cardbox">
@@ -83,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="ram">
+            <div class="ram" id="ram">
                 <h2 class="ram__heading">Оперативная память</h2>
 
                 <div class="rams__cardbox">

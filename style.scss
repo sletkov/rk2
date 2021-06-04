@@ -1,5 +1,8 @@
 @import 'general.scss';
 *{color: white;}
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
     padding: 20px;
     width: 100%;
