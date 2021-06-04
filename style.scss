@@ -33,7 +33,7 @@
 }
 
 .link {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -73,15 +73,22 @@ margin-bottom: 2rem;
 
 .processor{
     &__card {
-        width: 10rem;
+        padding: 1rem;
+        border: 3px solid #1D3557;
+        background-color: #1D3557;
+        border-radius: 8px;
+        width: 12rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 1rem;
     }
     &__name {
         font-size: 1rem;
     }
     &__image {
+        margin-bottom:0.5rem ;
+        margin-top: 0.5rem;
         height: 10rem;
         width: 10rem;
     }
@@ -109,7 +116,54 @@ margin-bottom: 2rem;
 
 .videocard{
     &__card {
+        padding: 1rem;
+        border: 3px solid #1D3557;
+        background-color: #1D3557;
+        border-radius: 8px;
+        width: 16rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+    &__name {
+        font-size: 1rem;
+    }
+    &__image {
+        margin-bottom:0.5rem ;
+        margin-top: 0.5rem;
+        height: 6rem;
         width: 14rem;
+    }
+    &__about {
+
+    }
+    &__price {
+        
+    }
+}
+
+.rams__cardbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+.ram__heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ram{
+    &__card {
+        padding: 1rem;
+        border: 3px solid #1D3557;
+        background-color: #1D3557;
+        border-radius: 8px;
+        margin-top: 1rem;
+        width: 20rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -118,8 +172,10 @@ margin-bottom: 2rem;
         font-size: 1rem;
     }
     &__image {
-        height: 10rem;
-        width: 14rem;
+        margin-bottom:0.5rem ;
+        margin-top: 0.5rem;
+        height: 5rem;
+        width: 18rem;
     }
     &__about {
 
@@ -139,5 +195,28 @@ margin-bottom: 2rem;
     justify-content: space-around;
 }
 .name,.group,.date {
-    font-size: 2rem;
+    font-size: 1rem;
+}
+
+@media(max-width:650px) {
+    .header__navigation {
+        order: 1;
+    }
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .header__logo {
+        flex-basis: 50%;
+    }
+    .theme-button {
+        // flex-basis: 50%;
+    }
+    .navigation__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .navigation__link {
+        margin-top: 1rem;
+    }
 }

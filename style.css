@@ -47,7 +47,7 @@ body {
 }
 
 .link {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -86,15 +86,22 @@ body {
 }
 
 .processor__card {
-  width: 10rem;
+  padding: 1rem;
+  border: 3px solid #1D3557;
+  background-color: #1D3557;
+  border-radius: 8px;
+  width: 12rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 1rem;
 }
 .processor__name {
   font-size: 1rem;
 }
 .processor__image {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   height: 10rem;
   width: 10rem;
 }
@@ -113,17 +120,58 @@ body {
 }
 
 .videocard__card {
-  width: 14rem;
+  padding: 1rem;
+  border: 3px solid #1D3557;
+  background-color: #1D3557;
+  border-radius: 8px;
+  width: 16rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 1rem;
 }
 .videocard__name {
   font-size: 1rem;
 }
 .videocard__image {
-  height: 10rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  height: 6rem;
   width: 14rem;
+}
+.rams__cardbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ram__heading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.ram__card {
+  padding: 1rem;
+  border: 3px solid #1D3557;
+  background-color: #1D3557;
+  border-radius: 8px;
+  margin-top: 1rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ram__name {
+  font-size: 1rem;
+}
+.ram__image {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  height: 5rem;
+  width: 18rem;
 }
 .footer__wrapper {
   padding: 20px;
@@ -136,5 +184,29 @@ body {
 }
 
 .name, .group, .date {
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 650px) {
+  .header__navigation {
+    order: 1;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .header__logo {
+    flex-basis: 50%;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .navigation__link {
+    margin-top: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
