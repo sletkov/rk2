@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -79,6 +75,15 @@ html {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 2rem;
+}
+
+.add-btn {
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: green;
+  width: 8rem;
+  height: 2rem;
 }
 
 .page__heading {
@@ -216,5 +221,29 @@ html {
 
   .navigation__link {
     margin-top: 1rem;
+  }
+}
+@media (min-width: 2560px) {
+  .header__wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .main__wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .footer__wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .link {
+    font-size: 2rem;
+  }
+
+  .name, .group, .date {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
