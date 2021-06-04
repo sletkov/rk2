@@ -1,0 +1,143 @@
+@import 'general.scss';
+*{color: white;}
+.wrapper {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E63946;
+}
+
+.header__logo {
+    flex-basis: 20%;
+    width: 8rem;
+    height: 100%;
+}
+
+.header__navigation {
+
+    flex-basis: 100%;
+}
+
+.navigation__list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation__link {
+    list-style: none;
+}
+
+.link {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.theme-button {
+    width: 8rem;
+    height: 2rem;
+    color:white;
+   background-color:#1D3557;
+   font-weight: 700;
+}
+
+.main__wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #457B9D;
+}
+
+.processors__cardbox {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-bottom: 2rem;
+}
+
+.page__heading {
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.processors__heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.processor{
+    &__card {
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__name {
+        font-size: 1rem;
+    }
+    &__image {
+        height: 10rem;
+        width: 10rem;
+    }
+    &__about {
+
+    }
+    &__price {
+        
+    }
+}
+
+.videocards__cardbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.videocards__heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.videocard{
+    &__card {
+        width: 14rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__name {
+        font-size: 1rem;
+    }
+    &__image {
+        height: 10rem;
+        width: 14rem;
+    }
+    &__about {
+
+    }
+    &__price {
+        
+    }
+}
+
+.footer__wrapper {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #E63946;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.name,.group,.date {
+    font-size: 2rem;
+}
